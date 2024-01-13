@@ -1,0 +1,57 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "CarL Hub by xymmxz", HidePremium = false, SaveConfig = true, ConfigFolder   = "MineSim", IntroText = "script blade ball"})
+
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "bruh!",
+	Content = "bruh script blade ball not blox fruits",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+Tab:AddToggle({
+	Name = "Auto Parry V1",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://pastebin.com/raw/EWZ1jeuS"))()
+	end    
+})
+Tab:AddToggle({
+	Name = "Auto Parry V2",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Auto-Parry/main/Real"))()
+	end    
+})
+Tab:AddButton({
+	Name = "Auto Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Auto-Spam-Parry/main/Bladeballnew"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Hold Block To Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonGabrielle/HoldToSpamV4/main/Main"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Auto Detect Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonGabrielle/AutoDetectV4/main/MainBalls"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Manual Spam",
+	Callback = function()
+      		https://raw.githubusercontent.com/ForYourHead/ManualSpam/main/R4mpageManualSpam
+  	end    
+})
+-- Dropdown:Refresh(List<table>,true)
+--Dropdown:Set("dropdown option")
+OrionLib:Init()
+-- destroying the interface: OrionLib:Destroy()
